@@ -1,6 +1,7 @@
 # GAHK-farm
 
-The GAHK Farm is a javaFx GUI application that simulates a farming game. This game is developed through GT course CS2340
+The GAHK Farm is a javaFx GUI application that simulates a farming game. This game is developed through GT course CS2340.
+To access the original repository, please visit this link https://github.gatech.edu/gvanwambeke3/GAHK-farm. 
 
 ![game screenshot2](/images/gahk_config.JPG?raw=true)
 ![game screenshot3](/images/gahk_home.JPG?raw=true)
