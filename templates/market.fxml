@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Market">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.81">
+         <image>
+            <Image url="@../images/marketplace.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#798897" height="340.0" layoutX="14.0" layoutY="27.0" opacity="0.82" stroke="#948b8b" strokeType="INSIDE" width="144.0" />
+      <Text layoutX="29.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory:">
+         <font>
+            <Font name="Comic Sans MS" size="23.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="71.0" fitWidth="69.0" layoutX="24.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/seed.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="78.0" fitWidth="78.0" layoutX="19.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/grown-plant.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="35.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/coin.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="seedLabel" layoutX="93.0" layoutY="128.0" prefHeight="32.0" prefWidth="58.0" text="-">
+         <font>
+            <Font name="Comic Sans MS" size="25.0" />
+         </font></Label>
+      <Label fx:id="plantLabel" layoutX="91.0" layoutY="216.0" prefHeight="36.0" prefWidth="46.0" text="-">
+         <font>
+            <Font name="Comic Sans MS" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="moneyLabel" layoutX="88.0" layoutY="302.0" prefHeight="36.0" prefWidth="69.0" text="-">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bbc6d0" height="300.0" layoutX="211.0" layoutY="40.0" opacity="0.79" stroke="#bcaaaa" strokeType="INSIDE" width="369.0" />
+      <Button fx:id="buyBtn" layoutX="444.0" layoutY="182.0" mnemonicParsing="false" onAction="#buy" text="Buy!">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <Button fx:id="sellPlants" layoutX="443.0" layoutY="239.0" mnemonicParsing="false" onAction="#sell" text="Sell!">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <Text layoutX="276.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Marketplace">
+         <font>
+            <Font name="Comic Sans MS" size="41.0" />
+         </font>
+      </Text>
+      <Button fx:id="returnBtn" layoutX="484.0" layoutY="350.0" mnemonicParsing="false" onAction="#pressReturnToFarmBtn" text="Return to Farm">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="57.0" fitWidth="58.0" layoutX="487.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/plant-back.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="seedPriceLabel" layoutX="249.0" layoutY="179.0" prefHeight="22.0" prefWidth="39.0" text="-">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font></Label>
+      <Label fx:id="plantPriceLabel" layoutX="249.0" layoutY="241.0" prefHeight="22.0" prefWidth="39.0" text="-">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font></Label>
+      <Text layoutX="225.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="225.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </Text>
+      <MenuButton fx:id="seedAmount" layoutX="291.0" layoutY="180.0" mnemonicParsing="false" onAction="#seedSelection" text="How Many">
+        <items>
+          <MenuItem fx:id="seed1" mnemonicParsing="false" onAction="#seedSelection" text="1" />
+          <MenuItem fx:id="seed2" mnemonicParsing="false" onAction="#seedSelection" text="2" />
+           <MenuItem fx:id="seed3" mnemonicParsing="false" onAction="#seedSelection" text="3" />
+           <MenuItem fx:id="seed4" mnemonicParsing="false" onAction="#seedSelection" text="4" />
+           <MenuItem fx:id="seed5" mnemonicParsing="false" onAction="#seedSelection" text="5" />
+           <MenuItem fx:id="seed6" mnemonicParsing="false" onAction="#seedSelection" text="6" /> 
+           <MenuItem fx:id="seed7" mnemonicParsing="false" onAction="#seedSelection" text="7" />
+           <MenuItem fx:id="seed8" mnemonicParsing="false" onAction="#seedSelection" text="8" />
+           <MenuItem fx:id="seed9" mnemonicParsing="false" onAction="#seedSelection" text="9" />
+           <MenuItem fx:id="seed10" mnemonicParsing="false" onAction="#seedSelection" text="10" />
+        </items>
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </MenuButton>
+      <MenuButton fx:id="harvestPlantsAmount" layoutX="291.0" layoutY="239.0" mnemonicParsing="false" onAction="#harvestPlantSelection" text="How Many">
+         <items>
+            <MenuItem fx:id="plant1" mnemonicParsing="false" onAction="#harvestPlantSelection" text="1" />
+            <MenuItem fx:id="plant2" mnemonicParsing="false" onAction="#harvestPlantSelection" text="2" />
+            <MenuItem fx:id="plant3" mnemonicParsing="false" onAction="#harvestPlantSelection" text="3" />
+            <MenuItem fx:id="plant4" mnemonicParsing="false" onAction="#harvestPlantSelection" text="4" />
+            <MenuItem fx:id="plant5" mnemonicParsing="false" onAction="#harvestPlantSelection" text="5" />
+            <MenuItem fx:id="plant6" mnemonicParsing="false" onAction="#harvestPlantSelection" text="6" />
+            <MenuItem fx:id="plant7" mnemonicParsing="false" onAction="#harvestPlantSelection" text="7" />
+            <MenuItem fx:id="plant8" mnemonicParsing="false" onAction="#harvestPlantSelection" text="8" />
+            <MenuItem fx:id="plant9" mnemonicParsing="false" onAction="#harvestPlantSelection" text="9" />
+            <MenuItem fx:id="plant10" mnemonicParsing="false" onAction="#harvestPlantSelection" text="10" />
+         </items>
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </MenuButton>
+      <ImageView fitHeight="57.0" fitWidth="46.0" layoutX="535.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/seed.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="seedOrSeeds" layoutX="388.0" layoutY="184.0" text="seeds">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="plantOrPlants" layoutX="388.0" layoutY="244.0" text="plants">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="sellSeeds" layoutX="495.0" layoutY="182.0" mnemonicParsing="false" onAction="#sell" text="Sell!">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Button>
+         
+   </children>
+</AnchorPane>

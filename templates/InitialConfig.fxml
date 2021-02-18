@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Configuration">
+    <children>
+        <ImageView fitHeight="406.0" fitWidth="600.0" layoutY="-5.0">
+            <image>
+                <Image url="@../images/config-background.jpg" />
+            </image>
+        </ImageView>
+        <VBox layoutX="-3.0" layoutY="97.0" prefHeight="190.0" prefWidth="606.0">
+            <children>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="nameInput" onAction="#pressNextButton" promptText="Name">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <HBox.margin>
+                                <Insets left="26.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                    <padding>
+                        <Insets left="179.0" />
+                    </padding>
+                </HBox>
+                <Label text="Difficulty" textFill="WHITE">
+                    <font>
+                        <Font name="Klee Demibold" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="250.0" />
+                    </VBox.margin>
+                    <padding>
+                        <Insets top="10.0" />
+                    </padding>
+                </Label>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button fx:id="level1" mnemonicParsing="false" onAction="#difficultyInitializer" text="Level 1" textFill="#5d13a1">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Klee Demibold" size="13.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="level2" mnemonicParsing="false" onAction="#difficultyInitializer" text="Level 2">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Klee Demibold" size="13.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="level3" mnemonicParsing="false" onAction="#difficultyInitializer" text="Level 3">
+                            <font>
+                                <Font name="Klee Demibold" size="13.0" />
+                            </font></Button>
+                    </children>
+                    <padding>
+                        <Insets left="187.0" top="5.0" />
+                    </padding>
+                </HBox>
+                <Label text="Seed Type" textFill="WHITE">
+                    <font>
+                        <Font name="Klee Demibold" size="18.0" />
+                    </font>
+                    <padding>
+                        <Insets left="10.0" top="10.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets left="237.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button fx:id="kaleConfig" mnemonicParsing="false" onAction="#difficultyInitializer" text="Kale">
+                            <HBox.margin>
+                                <Insets left="180.0" right="10.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Klee Demibold" size="13.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="tomatoConfig" mnemonicParsing="false" onAction="#difficultyInitializer" text="Tomatoes">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Klee Demibold" size="13.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="peanutsConfig" mnemonicParsing="false" onAction="#difficultyInitializer" text="Peanuts">
+                            <font>
+                                <Font name="Klee Demibold" size="13.0" />
+                            </font></Button>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" top="5.0" />
+                    </padding>
+                </HBox>
+            </children>
+        </VBox>
+        <Button fx:id="nextBtn" layoutX="520.0" layoutY="351.0" mnemonicParsing="false" onAction="#pressNextButton" prefHeight="27.0" prefWidth="57.0" text="Next" />
+      <ImageView fitHeight="130.0" fitWidth="375.0" layoutX="113.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/gahk-logo.png" />
+         </image>
+      </ImageView>
+    </children>
+</Pane>

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InitialFarmUI">
+   <center>
+      <StackPane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="550.0" fitWidth="800.0" opacity="0.75" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/dirt-grass-bg.jpg" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="300.0" prefWidth="200.0">
+               <children>
+                  <GridPane alignment="BOTTOM_CENTER" layoutX="14.0" layoutY="62.0" maxWidth="600.0" minWidth="600.0" prefHeight="266.0" prefWidth="600.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fx:id="plot09" fitHeight="80.0" fitWidth="125.0" layoutX="172.0" layoutY="223.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/grass.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="plot00" fitHeight="80.0" fitWidth="125.0" layoutX="22.0" layoutY="17.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true">
+                           <image>
+                              <Image url="@../images/grass.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="plot03" fitHeight="80.0" fitWidth="125.0" layoutX="443.0" layoutY="17.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" GridPane.columnIndex="3">
+                           <image>
+                              <Image url="@../images/grass.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="plot11" fitHeight="80.0" fitWidth="125.0" layoutX="448.0" layoutY="223.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/grass.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="plot06" fitHeight="80.0" fitWidth="125.0" layoutX="313.0" layoutY="127.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/grass.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="plot01" fitHeight="80.0" fitWidth="125.0" layoutX="167.0" layoutY="17.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../images/grass.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="plot07" fitHeight="80.0" fitWidth="125.0" layoutX="448.0" layoutY="127.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/grass.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="plot10" fitHeight="80.0" fitWidth="125.0" layoutX="313.0" layoutY="223.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/grass.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="plot04" fitHeight="80.0" fitWidth="125.0" layoutX="27.0" layoutY="127.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/grass.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="plot08" fitHeight="80.0" fitWidth="125.0" layoutX="27.0" layoutY="223.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/grass.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="plot05" fitHeight="80.0" fitWidth="125.0" layoutX="172.0" layoutY="127.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/grass.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="plot02" fitHeight="80.0" fitWidth="125.0" layoutX="308.0" layoutY="17.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" GridPane.columnIndex="2">
+                           <image>
+                              <Image url="@../images/grass.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="plan04" fitHeight="105.0" fitWidth="66.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/seed.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="plan01" fitHeight="105.0" fitWidth="66.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                           <image>
+                              <Image url="@../images/seed.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="plan05" fitHeight="105.0" fitWidth="66.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/seed.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="plan08" fitHeight="105.0" fitWidth="66.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/seed.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="plan09" fitHeight="105.0" fitWidth="66.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/seed.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="plan02" fitHeight="105.0" fitWidth="66.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                           <image>
+                              <Image url="@../images/seed.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="plan06" fitHeight="105.0" fitWidth="66.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/seed.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="plan10" fitHeight="105.0" fitWidth="66.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/seed.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="plan03" fitHeight="105.0" fitWidth="66.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                           <image>
+                              <Image url="@../images/seed.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="plan07" fitHeight="105.0" fitWidth="66.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../images/seed.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="plan11" fitHeight="105.0" fitWidth="66.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@../images/seed.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <ImageView fx:id="plan00" fitHeight="105.0" fitWidth="66.0" onMouseClicked="#selectPlot" onMouseEntered="#plotHighlighter" onMouseExited="#plotHighlighter" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/seed.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <StackPane layoutX="14.0" layoutY="321.0" prefHeight="76.0" prefWidth="575.0">
+                     <children>
+                        <VBox>
+                           <children>
+                              <Label prefHeight="51.0" prefWidth="196.0" text="Inventory" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="21.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox alignment="CENTER" prefHeight="122.0" prefWidth="573.0">
+                                 <children>
+                                    <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/water-can.png" />
+                                       </image>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                       <HBox.margin>
+                                          <Insets right="15.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Label fx:id="waterInventory" prefHeight="72.0" prefWidth="120.0" text="10" textFill="WHITE">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="50.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" translateX="10.0">
+                                       <image>
+                                          <Image url="@../images/seed.png" />
+                                       </image>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </ImageView>
+                                    <Label fx:id="seedInventory" prefHeight="101.0" prefWidth="121.0" text="10" textFill="WHITE" translateX="10.0">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="50.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" translateX="30.0">
+                                       <image>
+                                          <Image url="@../images/grown-plant.png" />
+                                       </image>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </ImageView>
+                                    <Label fx:id="harvestInventory" prefHeight="111.0" prefWidth="120.0" text="10" textFill="WHITE" translateX="30.0">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="50.0" />
+                                       </font>
+                                    </Label>
+                                    <VBox alignment="CENTER" prefHeight="128.0" prefWidth="121.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+                  <ImageView fitHeight="61.0" fitWidth="242.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/gahk-logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="453.0" prefHeight="76.0" prefWidth="99.0" text="Day " textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dayLabel" layoutX="524.0" layoutY="15.0" prefHeight="24.0" prefWidth="56.0" text="-" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS" size="33.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutY="455.0" opacity="0.61" prefHeight="25.0" prefWidth="590.0">
+                     <opaqueInsets>
+                        <Insets bottom="10.0" top="10.0" />
+                     </opaqueInsets>
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" height="51.61" radius="12.4025" width="0.0" />
+                     </effect>
+                  </Separator>
+                  <HBox alignment="CENTER_LEFT" layoutX="8.0" layoutY="467.0" prefHeight="76.0" prefWidth="612.0">
+                     <children>
+                        <ImageView fitHeight="112.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <image>
+                              <Image url="@../images/character.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="difficultyLabel" prefHeight="66.0" prefWidth="150.0" text="-" textFill="WHITE">
+                           <font>
+                              <Font name="Comic Sans MS" size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="64.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
+                           <effect>
+                              <DropShadow color="#ffe500" />
+                           </effect>
+                           <image>
+                              <Image url="@../images/coin.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="moneyLabel" prefHeight="42.0" prefWidth="127.0" text="-" textFill="WHITE" translateX="-10.0">
+                           <font>
+                              <Font name="Comic Sans MS" size="30.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="CENTER" prefHeight="76.0" prefWidth="90.0">
+                           <children>
+                              <Button fx:id="marketButton" mnemonicParsing="false" onMousePressed="#pressMarketBtn" onMouseReleased="#buttonAnimation" prefHeight="54.0" prefWidth="69.0" text="Market" translateX="-35.0">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="14.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets top="10.0" />
+                                 </opaqueInsets>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </Button>
+                           </children>
+                           <opaqueInsets>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </opaqueInsets>
+                        </VBox>
+                        <Button fx:id="nextDayBtn" mnemonicParsing="false" onAction="#pressNextDay" prefHeight="54.0" prefWidth="81.0" text="Next Day" translateX="-30.0">
+                           <font>
+                              <Font name="Comic Sans MS" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets left="20.0" />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets left="20.0" right="20.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="603.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" translateX="20.0">
+                     <image>
+                        <Image url="@../images/grass.png" />
+                     </image>
+                  </ImageView>
+                  <Separator layoutX="600.0" orientation="VERTICAL" prefHeight="550.0" translateX="-10.0" />
+                  <Button fx:id="plantButton" layoutX="676.0" layoutY="433.0" mnemonicParsing="false" onMousePressed="#plantSeed" onMouseReleased="#buttonAnimation" prefHeight="40.0" prefWidth="100.0" text="Plant" translateX="-20.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="waterButton" layoutX="606.0" layoutY="487.0" mnemonicParsing="false" onMousePressed="#waterPlant" onMouseReleased="#buttonAnimation" prefHeight="40.0" prefWidth="78.0" text="Water" translateX="10.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="harvestButton" layoutX="696.0" layoutY="490.0" mnemonicParsing="false" onMousePressed="#harvestPlant" onMouseReleased="#buttonAnimation" prefHeight="42.0" prefWidth="81.0" text="Harvest" translateX="10.0" translateY="-5.0">
+                     <font>
+                        <Font name="Comic Sans MS" size="13.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="plantName" layoutX="616.0" layoutY="231.0" text="Plant: Tomato" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <ProgressBar fx:id="waterProgress" layoutX="597.0" layoutY="351.0" minHeight="-Infinity" prefHeight="25.0" prefWidth="160.0" progress="0.45" translateX="20.0" />
+                  <Label layoutX="614.0" layoutY="311.0" text="Water Level" textFill="WHITE" translateX="10.0">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="displayPlant" fitHeight="120.0" fitWidth="120.0" layoutX="652.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/seed.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>
